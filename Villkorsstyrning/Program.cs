@@ -1,21 +1,27 @@
-﻿int minValue = 0;
-int maxValue = 100;
+﻿bool isEnabled = true;
 
-int currentValue = 100;
-
-if (currentValue <= minValue)
+if (isEnabled)
 {
-    Console.WriteLine("Värdet är mindre eller lika med minvärdet");
-}
-else if (currentValue > maxValue)
-{
-    Console.WriteLine("Värdet är större än minvärdet");
-}
-else
-{
-    Console.WriteLine("Värdet håller sig inom sina ramar");
+    Console.WriteLine("Step 1...");
+    Console.WriteLine("Step 2...");
+    Console.WriteLine("Step 3...");
+    Console.WriteLine("Step 4...");
 }
 
+string result = isEnabled ? "Detta är sant" : "Detta är falskt";
+Console.WriteLine(result);
 Console.ReadKey();
 
-/* */
+/*
+
+if (currentValue > minValue)
+{
+    if (currentValue > maxValue) 
+    {
+        Console.WriteLine("Värdet är större än maxvärdet");
+    } else
+    {
+        Console.WriteLine("Värdet håller sig inom sina ramar");
+    }
+}
+ */
